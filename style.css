@@ -1,0 +1,281 @@
+* {
+  font-family: verdana;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;  
+}
+
+header{
+  height: 100vh;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  margin-left: 5px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+h1, p {
+  color: black;
+}
+
+.center {
+  display: block;
+}
+
+.center-img{
+  padding: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro, .center-img{
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-img{
+  padding-left: 200px;
+}
+
+.intro h2 {
+  text-align: center;
+  color: black;
+  margin-top: 25px;
+  font-size: 2.5em;
+}
+
+
+h1, h2 {
+  font-family: aller display;
+}
+
+p{
+  font-family: aller display;
+  font-size:  1.2em;
+}
+
+h2{
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+#gallery, #typo-container{
+  margin-bottom: 250px;
+}
+
+#gallery p, #typo-container p{
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+#videogip-container{
+  text-align: right;
+}
+
+#typo-container{
+  text-align: right;
+}
+
+
+
+video {
+  /* override other styles to make responsive */
+  width: 100%    !important;
+  max-width: 800px;
+  height: auto   !important;
+}
+
+/* A link */
+a { 
+  text-decoration: none;
+ }
+
+#page-gallery, a {
+  color: black;
+}
+
+
+
+.centertext{
+  text-align: center;
+  font-family: ;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 850px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Video Typo animatie */
+
+#typo{
+  text-align: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a red color */
+input[type=submit]:hover {
+  background-color: red;
+}
+
+/* Add a background color and some padding around the form */
+.containerform {
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: -20px;
+  margin-top: 30px;
+}
+
+/* ANIMATION STYLE CSS*/
+
+
+
+.wrapper {
+  margin: 20em auto 2em auto;
+  position:relative;
+}
+
+.piece {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 500;
+
+}
+
+@keyframes slide {
+  0%{transform: translateX(0);}
+  50% {transform:translateX(530px);}
+  0% {transform:translateX(0);}
+}
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*MEDIA QUERIES
+*/
+@media only screen and (max-width: 600px) {
+  nav ul {
+    display: block;
+  }
+  .center-img img{
+  width:50%;
+  padding: 0;
+  }
+  .center-img p{
+  font-size: 0.8em;
+  }
+
+  .container{
+    width: 50%;
+  }
+
+  .container h2 p{
+    width: 50%;
+  }
+
+}
+
+
