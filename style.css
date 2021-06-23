@@ -220,7 +220,7 @@ input[type=submit]:hover {
 
 .piece {
   animation-name: slide;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-timing-function: ease-in;
   animation-iteration-count: 500;
 
